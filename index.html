@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bora.com.vamodale</title>
 
-    <style>
+   <style>
         body{
-            background-color: red;
+            background-color: #5f98fa;
         }
 
         .painel{
@@ -24,9 +24,9 @@
         #sim{
             height: 40px;
             width: 60px;
-            background-color: red;
+            background-color: green;
             border: 2px solid white;
-            border-radius: 10px;
+            border-radius: 20px;
             color: white;
             margin-left: -50px;
         }
@@ -36,7 +36,7 @@
             width: 60px;
             background-color: red;
             border: 2px solid white;
-            border-radius: 10px;
+            border-radius: 20px;
             color: white;
             margin-left: 10px;
         }
@@ -45,18 +45,48 @@
 
 </head>
 <body>
-
-    <div class="painel">
+  <div> 
+    <meter value="250" min="0" max="500">0 a 500 GB</meter></div>
+  <div>    
+    <progress value="40" max="100">100%</progress>
+  </div>
+  <div>
+    <select id=”filmes” name=”filmes”>
+    <optgroup label=Terror>
+      <option value=”1″>O Exorcista</option>
+      <option value=”2″>A Bruxa de Blair</option>
+      <option value=”3″>Atividade Paranormal</option>
+    <optgroup label=Comédia>
+     <option value=”4″>Se Beber, Não Case</option>
+     <option value=”5″>Todo Mundo em Pânico</option>
+     <option value=”6″>Curtindo a Vida Adoidado</option>
+    </optgroup>
+    </optgroup>
+    </select>
+  </div>
+  
+  <div>
+    <del>Eu manjo muito de HTML</del> <ins>Meu conhecimento de HTML está sempre crescendo</ins>.
+    <p>Use a função getElements<wbr>ByTagName() para recuperar os elementos</p>
+  </div>
+  <div>
+    <address>
+Esse artigo é de autoria de:<br />
+<a href=”mailto:redacao@codigofonte.com.br”>Redação Código Fonte</a>
+</address>
+    <q>Um país se faz com homens e livros. <cite>Monteiro Lobato</cite>.</q>Conclusão
+  </div>
+  
+  <div class="painel">
         <h1>Convite Especial</h1>
 
-        <img src="https://gifman.net/wp-content/uploads/2019/06/casal-apaixonado-10.gif" alt="">
+        <img src="https://gifman.net/wp-content/uploads/2019/07/patrick-01.gif" alt="">
 
-        <h2>Rola o anel proibido hoje??</h2>
-        
+        <h2>Bora no anel dourado hoje??</h2>
 
         <a href="https://www.youtube.com/watch?v=0mJMW2CzTiA"><button id="sim" > Sim! </button></a>
         <button onmouseover="fuja()" id="nao"> Não! </button>
-        
+
     </div>
 
     <script>
@@ -80,6 +110,8 @@
     </script>
 
 
+
+    
 
     
 </body>
